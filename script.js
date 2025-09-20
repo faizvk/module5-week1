@@ -24,10 +24,17 @@ function updateEmptyMessage() {
 }
 
 function playBeep() {
-  const audio = new Audio(
-    "https://www.soundjay.com/buttons/sounds/beep-07.mp3"
-  );
-  audio.play();
+  const audio = new Audio("beeper.mp3");
+
+  const playPromise = audio.play();
+
+  if (playPromise !== undefined) {
+    playPromise
+      .then((_) => {})
+      .catch((error) => {
+        console.error("Audio playback was prevented by the browser:", error);
+      });
+  }
 }
 
 function createTimer(totalSeconds) {
