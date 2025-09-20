@@ -1,0 +1,103 @@
+body {
+  background-color: #1d1d23;
+  color: white;
+  margin: auto;
+  width: 100vh;
+  padding-top: 50px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34344a;
+  border-radius: 15px;
+  width: auto;
+  padding: 25px 20px;
+  margin-bottom: 40px;
+}
+#inputs {
+  display: flex;
+  width: 200px;
+  text-align: left;
+  align-items: center;
+}
+input {
+  width: 40px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 19px;
+}
+input::placeholder {
+  color: white;
+  opacity: 1;
+  font-size: 21px;
+  text-decoration: underline;
+}
+input:focus {
+  outline: none;
+}
+#setTime {
+  margin-right: 50px;
+}
+.submit {
+  background-color: #f0f757;
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: none;
+}
+#emptyMsg {
+  text-align: center;
+  margin-top: 20px;
+  color: #ccc;
+}
+p {
+  margin: 0px 5px;
+}
+#currentTimers {
+  width: 190px;
+  margin: auto;
+  background-color: #39393e;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34344a;
+  border-radius: 15px;
+  width: auto;
+  padding: 25px 20px;
+  margin-bottom: 20px;
+}
+.timeDisplay {
+  font-size: 30px;
+  text-align: center;
+}
+.stopBtn {
+  background-color: #34344a;
+  padding: 10px 35px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+.timerEnd {
+  color: black;
+  flex-grow: 1;
+  text-align: center;
+  padding-left: 80px;
+}
